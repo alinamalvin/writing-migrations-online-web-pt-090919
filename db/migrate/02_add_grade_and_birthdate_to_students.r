@@ -1,7 +1,7 @@
 class AddGradeAndBirthdateToStudents < ActiveRecord::Migration[5.1]
-  def change
-    create_table :students do |t|
-      t.string :name
+  def add_column
+    add_column :students do |t|
+      t.integer :grade
     end
 end
 end 
